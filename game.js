@@ -1,14 +1,15 @@
-alert("test");
+var buttonColors = ["red", "blue", "green", "yellow"]
+
+var gamePattern = [];
+
 
 function nextSequence() {
 
-var randomNumber = Math.random();
+var randomNumber = Math.floor(Math.random() * 4);
 
-randomNumber = randomNumber * 3;
+var randomChosenColor = buttonColors[randomNumber];
 
-randomNumber = Math.floor(randomNumber);
-
-console.log(randomNumber);
+gamePattern.push(randomChosenColor);
 
 }
 
