@@ -45,8 +45,8 @@ function animatePress(currentColor) {
   
 $("#" + currentColor).addClass("pressed");
 
-setTimeout((function() {
+setTimeout(function() {
   $("#" + currentColor).removeClass("pressed");
-}, 100))
+}, 100);
 
 }
