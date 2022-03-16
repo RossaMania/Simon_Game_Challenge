@@ -40,9 +40,7 @@ function nextSequence() {
 
 userClickedPattern = [];
 
-level++
-
-// level = level++;
+level++;
 
 $("#level-title").text("Level " + level);
 
@@ -53,7 +51,9 @@ var randomChosenColor = buttonColors[randomNumber];
 gamePattern.push(randomChosenColor);
 
 console.log(randomNumber);
+
 console.log("Color is " + randomChosenColor);
+
 console.log("Level " + level);
 
 $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
@@ -83,7 +83,7 @@ setTimeout(function() {
 
 function checkAnswer(currentLevel) {
 
-  if (gamePattern[currentLevel] === userClickedPattern[currentLevel])
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
 
   console.log("success");
 
@@ -95,7 +95,7 @@ function checkAnswer(currentLevel) {
 
   }
   
-  else {
+} else {
     
   console.log("wrong");
 
