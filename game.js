@@ -94,7 +94,21 @@ function checkAnswer(currentLevel) {
   
   else {
     
-  console.log("wrong"); 
+  console.log("wrong");
+
+  playSound("wrong");
+
+  $("h1").text("Game Over! Press any key to restart!")
+  
+  $("body").addClass("game-over");
+
+setTimeout(function() {
+
+  $("body").removeClass("game-over");
+
+}, 200);
+
+$("#level-title").text("Game Over! Press any key to restart!")
 
 }
 

@@ -18,10 +18,10 @@ body {
   margin: auto;
 }
 
-.btn:hover {
+/* .btn:hover {
   box-shadow: 0 0 20px #BC8CF2;
   background-color: #AA14F0;
-}
+} */
 
 .btn {
   margin: 25px;
@@ -33,7 +33,7 @@ body {
 }
 
 .game-over {
-  background-color: red;
+  background-color: #FF004D;
   opacity: 0.8;
 }
 
