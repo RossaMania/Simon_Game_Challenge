@@ -40,7 +40,10 @@ function nextSequence() {
 
 userClickedPattern = [];
 
-level = level++;
+level++
+
+// level = level++;
+
 $("#level-title").text("Level " + level);
 
 var randomNumber = Math.floor(Math.random() * 4);
@@ -110,6 +113,19 @@ setTimeout(function() {
 
 $("#level-title").text("Game Over! Press any key to restart!")
 
+startOver();
+
 }
+
+}
+
+
+function startOver() {
+
+started = false;
+
+level = 0
+
+gamePattern = [];
 
 }
